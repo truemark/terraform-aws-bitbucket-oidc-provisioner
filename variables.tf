@@ -11,7 +11,7 @@ variable "name" {
 
 variable "path" {
   description = "Path to use on resources"
-  default = "/terraform/security/"
+  default = "/"
   type = string
 }
 
