@@ -26,6 +26,11 @@ variable "provider_url" {
   type = string
 }
 
+variable "provider_urls" {
+  description = "URLs for OIDC providers"
+  type = list(string)
+}
+
 variable "role_policy_arns" {
   description = "List of ARNs of IAM policies to attach to IAM role"
   type = list(string)

@@ -9,13 +9,14 @@ locals {
 
 module "bitbucket_service_provisioner" {
   source = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
-  version = "4.3.0"
+  version = "5.5.0"
   create_role = var.create_role
   role_name = var.name
   tags = merge({
     Role = var.name
   }, var.tags)
   provider_url = var.provider_url
+  provider_urls = var.provider_urls
   role_policy_arns = var.role_policy_arns
   oidc_subjects_with_wildcards = local.allowed_repository_uuids
   role_path = var.path
