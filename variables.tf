@@ -73,3 +73,9 @@ variable "policies" {
   default = []
   type = list(string)
 }
+
+variable "allow_self_assume_role" {
+  description = "Allow the role to assume itself"
+  default = true
+  type = bool
+}

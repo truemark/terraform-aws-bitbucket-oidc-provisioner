@@ -19,6 +19,7 @@ module "bitbucket_service_provisioner" {
   role_policy_arns = var.role_policy_arns
   oidc_subjects_with_wildcards = local.allowed_repository_uuids
   role_path = var.path
+  allow_self_assume_role = var.allow_self_assume_role
 }
 
 #------------------------------------------------------------------------------
