@@ -21,11 +21,6 @@ variable "tags" {
   default     = {}
 }
 
-variable "provider_url" {
-  description = "URL of the OIDC provider"
-  type = string
-}
-
 variable "provider_urls" {
   description = "URLs for OIDC providers"
   type = list(string)

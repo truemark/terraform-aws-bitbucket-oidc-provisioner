@@ -15,7 +15,6 @@ module "bitbucket_service_provisioner" {
   tags = merge({
     Role = var.name
   }, var.tags)
-  provider_url = var.provider_url
   provider_urls = var.provider_urls
   role_policy_arns = var.role_policy_arns
   oidc_subjects_with_wildcards = local.allowed_repository_uuids
