@@ -9,7 +9,7 @@ locals {
 
 module "bitbucket_service_provisioner" {
   source = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
-  version = "5.5.4"
+  version = "5.5.5"
   create_role = var.create_role
   role_name = var.name
   tags = merge({
