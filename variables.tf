@@ -79,3 +79,9 @@ variable "allow_self_assume_role" {
   default = true
   type = bool
 }
+
+variable "session_duration" {
+  type    = number
+  default = 7200
+  description = "The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of two hours is applied. This setting can have a value from 1 hour to 12 hours."
+}
