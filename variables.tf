@@ -79,3 +79,9 @@ variable "allow_self_assume_role" {
   default = true
   type = bool
 }
+
+variable "max_session_duration" {
+  description = "Maximum CLI/API session duration in seconds between 3600 and 43200"
+  type        = number
+  default     = 3600
+}

@@ -20,6 +20,7 @@ module "bitbucket_service_provisioner" {
   oidc_subjects_with_wildcards = local.allowed_repository_uuids
   role_path = var.path
   allow_self_assume_role = var.allow_self_assume_role
+  max_session_duration = var.max_session_duration
 }
 
 #------------------------------------------------------------------------------
